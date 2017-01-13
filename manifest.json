@@ -10,11 +10,9 @@
 	},
 
 	"browser_action": {
-		"default_icon": "secure.png"
+		"default_icon": "misc/secure.png"
 	},
 
-	"permissions": [
-		"activeTab"
-	]
+	"permissions": [ "activeTab" ]
 
 }

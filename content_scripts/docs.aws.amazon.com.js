@@ -37,11 +37,8 @@ if (figures !== null)
 			const nextNextElementSibling = figures[i].nextElementSibling.nextElementSibling;
 			if (nextNextElementSibling.classList.contains("figure")) {
 				const title = nextNextElementSibling.querySelector('.title');
-				if (title !== null) {
-					if (title.innerText === "YAML") {
-						figures[i].hidden = hideJSON;
-					}
-				}
+				if (title !== null && title.innerText === "YAML")
+					figures[i].hidden = hideJSON;
 			}
 		}
 	}

@@ -25,6 +25,10 @@ const footer = document.getElementById('footer');
 if (footer !== null)
 	footer.hidden = hideFooter;
 
+const leftColumn = document.getElementById('left-column');
+if (leftColumn !== null)
+	leftColumn.style.height = hideFooter ? "100%" : "";
+
 const finegrainedSearch = document.getElementById('finegrainedSearch');
 if (finegrainedSearch !== null)
 	finegrainedSearch.style.display = hideSearch ? "none" : "block";

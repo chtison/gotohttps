@@ -1,0 +1,25 @@
+.body {
+	max-width: none !important;
+}
+
+.sphinxsidebar, #sidebarbutton {
+	position: fixed !important;
+	top: 6vh !important;
+	bottom: 11vh !important;
+}
+
+.sphinxsidebar {
+	margin-left: 0 !important;
+}
+
+.sphinxsidebarwrapper {
+	box-sizing: border-box !important;
+	padding: 10px !important;
+	height: 100% !important;
+	width: 100% !important;
+	overflow-y: scroll !important;
+}
+
+#sidebarbutton {
+	display: none !important;
+}

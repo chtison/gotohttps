@@ -1,0 +1,42 @@
+.body, .documentwrapper {
+	background-color: white !important;
+}
+
+.body, .bodywrapper {
+	max-width: none !important;
+}
+
+.body {
+	width: 90% !important;
+}
+
+.documentwrapper {
+	min-height: 90vh !important;
+}
+
+.sphinxsidebar {
+	position: fixed !important;
+	top: 52px !important;
+	bottom: 52px !important;
+	left: 10px !important;
+	overflow-y: scroll !important;
+}
+
+.sphinxsidebar h3 {
+	position: fixed !important;
+	box-sizing: border-box !important;
+	width: inherit !important;
+	margin-top: 0 !important;
+}
+
+.sphinxsidebar > .current {
+	margin-top: 3em !important;
+}
+
+.sphinxsidebar .current ul {
+	margin-right: 0 !important;
+}
+
+.scrollToTop {
+	display: none !important;
+}

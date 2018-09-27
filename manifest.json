@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
 
-	"name": "gotohttps",
-	"description": "This extension lets you jump to HTTPS with one click",
+	"name": "libchrome",
+	"description": "Libchrome is a collection of useful features",
 	"version": "1.0",
 
 	"background": {
@@ -11,15 +11,30 @@
 	},
 
 	"browser_action": {
-		"default_title": "Go To HTTPS",
+		"default_title": "LibChrome",
 		"default_icon": "misc/secure.png"
 	},
 
 	"content_scripts": [
 		{
-			"run_at": "document_end",
-			"matches": ["*://docs.aws.amazon.com/*"],
-			"js": ["content_scripts/docs.aws.amazon.com.js"]
+			"matches": ["*://pandas.pydata.org/*"],
+			"run_at": "document_idle",
+			"css": ["css/pandas.pydata.org"]
+		},
+		{
+			"matches": ["*://stockcharts.com/*"],
+			"run_at": "document_idle",
+			"css": ["css/stockcharts.com"]
+		},
+		{
+			"matches": ["*://developers.google.com/machine-learning/glossary/", "*://developers.google.com/machine-learning/crash-course/glossary"],
+			"run_at": "document_idle",
+			"css": ["css/developers.google.com_machine-learning_crash-course_glossary"]
+		},
+		{
+			"matches": ["*://docs.python.org/*"],
+			"run_at": "document_idle",
+			"css": ["css/docs.python.org"]
 		}
 	],
 
